@@ -2,7 +2,7 @@
 // Iniciando o projeto. Utilize console.log() para testar as funções localmente, mas remova antes de fazer o push
 
 function compareTrue(a, b) {
-  if (a === true && b === true){
+  if (a === true && b === true) {
     return true;
   }
     return false;
@@ -29,9 +29,23 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  let maior = 0;
+  let contador = 0;
+
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] > maior) {
+      maior = array[i];
+    }
+  }
+  for (let index = 0; index <= array.length; index += 1) {
+    if (maior === array[index]) {
+      contador += 1;
+    }
+  }
+  return contador;
 }
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
 function catAndMouse() {
