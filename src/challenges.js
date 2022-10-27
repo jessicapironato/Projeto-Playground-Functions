@@ -19,8 +19,8 @@ function splitSentence(palavras) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(itens) {
+  return itens[itens.length -1] + ", " + itens[0];
 }
 
 // Desafio 5
