@@ -1,15 +1,17 @@
 // Desafio 1
 // Iniciando o projeto. Utilize console.log() para testar as funções localmente, mas remova antes de fazer o push
 
-function compareTrue() {
-
+function compareTrue(a, b) {
+  if (a === true && b === true){
+    return true;
+  }
+    return false;
 }
 
 // Desafio 2
 function calcArea(base, altura) {
   return (base * altura) / 2;
 }
-
 
 // Desafio 3
 function splitSentence() {
