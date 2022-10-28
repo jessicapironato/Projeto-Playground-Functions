@@ -77,12 +77,28 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(expressoes) {
+  let palavra = { a: '1', e: '2', i: '3', o: '4', u: '5' };
+  let resultado = '';
+
+  for (const indice of expressoes) {
+    resultado += indice in palavra ? palavra[indice] : indice;
+  }
+  return resultado;
 }
-function decode() {
-  // seu código aqui
+console.log(encode('hi there'));
+
+function decode(expressoes) {
+  let palavra = { 1: 'a', 2: 'e', 3: 'i', 4: 'o', 5: 'u' };
+  let resultado = '';
+
+  for (const indice of expressoes) {
+    resultado += indice in palavra ? palavra[indice] : indice;
+  }
+  return resultado;
 }
+console.log(decode('h2ll4'));
+
 
 // Desafio 10
 function techList() {
